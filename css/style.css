@@ -17,6 +17,28 @@ body {
 
 /* MISC */
 
+.mainTitle {
+  padding: 40px 0 0;
+  font-family: "OpenSansLight" !important;
+}
+.mainTitle h2 {
+  font-size: 40px;
+  line-height: 32px;
+}
+.mainTitle h2 span {
+  font-size: 20px;
+  color: rgb(252, 176, 64);
+}
+.mainTitle .subtitle {
+  font-family: "OpenSansRegular";
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.mainTitle p {
+  font-family: "OpenSansRegular";
+}
+
 .underline {
   height: 4px;
   width: 100px;
@@ -76,6 +98,11 @@ body {
   -moz-box-shadow: 0px 4px 33px 16px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 4px 33px 16px rgba(0, 0, 0, 0.09);
 }
+.pic-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 .norm-card {
   -webkit-box-shadow: 0px 3px 25px -2px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 3px 25px -2px rgba(0, 0, 0, 0.15);
@@ -83,6 +110,17 @@ body {
   padding: 0;
   transition: all 0.15s ease-in;
   cursor: pointer;
+  min-width: 210px;
+  margin-bottom: 30px;
+}
+.norm-card:hover {
+  -webkit-box-shadow: 0px 22px 17px 1px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 22px 17px 1px rgba(0, 0, 0, 0.13);
+  box-shadow: 0px 22px 17px 1px rgba(0, 0, 0, 0.13);
+}
+.norm-card p:nth-of-type(2) {
+  font-style: italic;
+  font-size: 13px;
 }
 .cardCover {
   object-fit: cover;
@@ -108,6 +146,205 @@ body {
   font-size: 14px;
 }
 
+/* checkbox control */
+.control {
+  font-family: arial;
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #f1f1f1;
+  border: 1px solid #dfdfdf;
+}
+.control-radio .control_indicator {
+  border-radius: undefined;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #f1f1f1;
+}
+
+.control input:checked ~ .control_indicator {
+  background: rgb(252, 176, 64);
+}
+/* .control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background: #0e6647d;
+} */
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-checkbox .control_indicator:after {
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 8px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control-checkbox input:disabled ~ .control_indicator:after {
+  border-color: #7b7b7b;
+}
+.control-radio .control_indicator {
+  border-radius: 50%;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #f3bc0f;
+}
+/* .control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+  background: #0e6647d;
+} */
+.control input:disabled ~ .control_indicator {
+  background: #e6e6e6;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-radio .control_indicator:after {
+  left: 7px;
+  top: 7px;
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+.control-radio input:disabled ~ .control_indicator:after {
+  background: #7b7b7b;
+}
+
+/* Range selector */
+input[type="range"] {
+  height: 32px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgb(252, 176, 64);
+  border-radius: 13px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #ffffff;
+  border: 2px solid #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 25px;
+  background: rgb(252, 176, 64);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: rgb(252, 176, 64);
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: rgb(252, 176, 64);
+  border-radius: 13px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #ffffff;
+  border: 2px solid #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 25px;
+  background: rgb(252, 176, 64);
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: rgb(252, 176, 64);
+  border: 0px solid #000000;
+  border-radius: 26px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: rgb(252, 176, 64);
+  border: 0px solid #000000;
+  border-radius: 26px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #ffffff;
+  border: 2px solid #ffffff;
+  height: 24px;
+  width: 24px;
+  border-radius: 25px;
+  background: rgb(252, 176, 64);
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: rgb(252, 176, 64);
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: rgb(252, 176, 64);
+}
 /* TOP NAVIGATION */
 
 #topNav {
@@ -159,6 +396,13 @@ body {
   text-decoration: none;
   font-weight: 100;
   font-family: "OpenSansLight";
+}
+#mainNav a:hover {
+  color: rgb(252, 176, 64);
+}
+#mainNav .selected {
+  color: rgb(252, 176, 64);
+  border-bottom: 2px solid rgb(252, 176, 64);
 }
 
 /* HEADER IMAGE */
@@ -243,11 +487,6 @@ body {
 #popular-artists .bottomrow {
   margin-top: 30px;
 }
-#popular-artists .norm-card:hover {
-  -webkit-box-shadow: 0px 22px 17px 1px rgba(0, 0, 0, 0.13);
-  -moz-box-shadow: 0px 22px 17px 1px rgba(0, 0, 0, 0.13);
-  box-shadow: 0px 22px 17px 1px rgba(0, 0, 0, 0.13);
-}
 
 /* PRICE RANGE */
 
@@ -288,6 +527,9 @@ body {
 }
 #why-snow p {
   font-family: "OpenSansRegular";
+}
+#why-snow img {
+  width: 100%;
 }
 
 /* FOOTER */
