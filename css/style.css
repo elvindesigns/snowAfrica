@@ -5,11 +5,11 @@
 }
 @font-face {
   font-family: "OpenSansLight";
-  src: url("../font/OPENSANS-LIGHT.ttf");
+  src: url("../font/OPENSANS-LIGHT.TTF");
 }
 @font-face {
   font-family: "OpenSansRegular";
-  src: url("../font/OPENSANS-REGULAR.ttf");
+  src: url("../font/OPENSANS-REGULAR.TTF");
 }
 body {
   font-family: "OpenSansRegular", sans-serif;
