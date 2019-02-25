@@ -11,6 +11,10 @@
   font-family: "OpenSansRegular";
   src: url("../font/OPENSANS-REGULAR.TTF");
 }
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../font/OPENSANS-BOLD.TTF");
+}
 body {
   font-family: "OpenSansRegular", sans-serif;
 }
@@ -23,13 +27,13 @@ body {
 }
 .mainTitle h2 {
   font-size: 40px;
-  line-height: 32px;
+  line-height: 40px;
 }
 .mainTitle h2 span {
   font-size: 20px;
   color: rgb(252, 176, 64);
 }
-.mainTitle .subtitle {
+.subtitle {
   font-family: "OpenSansRegular";
   font-size: 20px;
   font-weight: bold;
@@ -37,6 +41,20 @@ body {
 }
 .mainTitle p {
   font-family: "OpenSansRegular";
+}
+
+.yellowbutton {
+  font-weight: 100;
+  font-family: "OpenSansLight" !important;
+  background: none;
+  background: linear-gradient(to right, rgb(252, 176, 64), rgb(245, 164, 101));
+  border: none;
+  padding: 12px 40px;
+  color: white;
+  outline: none;
+  margin: 10px 0;
+  cursor: pointer;
+  width: 100%;
 }
 
 .underline {
@@ -80,6 +98,7 @@ body {
   padding: 25px 10px;
   font-family: "OpenSansRegular";
   font-weight: bold;
+  border: 1px solid #7b7b7b;
 }
 .pic-card {
   margin-top: 20px;
@@ -144,6 +163,26 @@ body {
 .section-subtitle {
   margin-bottom: 20px;
   font-size: 14px;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.counter {
+  border: 2px solid black;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-align: center;
+}
+.counter h3 {
+  font-family: "OpenSansBold";
+}
+.counter p {
+  font-size: 13px;
 }
 
 /* checkbox control */
@@ -468,7 +507,7 @@ input[type="range"]:focus::-ms-fill-upper {
 }
 #curators h2 {
   font-size: 40px;
-  line-height: 32px;
+  line-height: 40px;
 }
 #curators h2 span {
   font-size: 20px;
@@ -550,4 +589,127 @@ footer a {
 footer #logobottom {
   margin: 120px 0;
   text-align: center;
+}
+
+/* PRODUCTS LIST */
+#productslist a {
+  text-decoration: none;
+  color: #333333;
+}
+
+/* ART DISPLAY */
+
+#artdisplay .artholder {
+  /* height: 500px; */
+}
+#artdisplay .artholder > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+#artdisplay #infoholder {
+  border: 1px solid rgb(223, 223, 223);
+  /* height: 500px; */
+  padding: 30px;
+  min-width: 250px;
+}
+#artdisplay #infoholder #section1 {
+  display: flex;
+  align-items: center;
+}
+#artdisplay #infoholder #section1 h4 {
+  margin-right: 25px;
+  font-size: 22px;
+}
+
+#artdisplay #infoholder #section2 {
+  margin-top: 30px;
+}
+#artdisplay #infoholder #section3 {
+  margin-top: 20px;
+}
+#artdisplay #infoholder #section4 {
+  margin-top: 20px;
+}
+#artdisplay #infoholder #section4 h2 {
+  font-size: 25px;
+}
+#artdisplay #infoholder #section4 p {
+  font-size: 12px;
+}
+#artdisplay #infoholder #section5 {
+  margin-top: 10px;
+}
+#artdisplay #infoholder #section5 p {
+  font-size: 12px;
+  text-align: right;
+}
+#artdisplay #infoholder #section5 a {
+  text-decoration: none;
+  color: #333333;
+}
+#artdisplay #infoholder #section5 a:hover {
+  text-decoration: underline;
+}
+#artdisplay #infoholder #section6 .counterholder {
+  justify-content: space-between;
+}
+
+#artdisplay #infoholder #section6 {
+}
+
+#gallery-buttons-holder {
+  justify-content: center;
+}
+#gallery-buttons-holder button {
+  height: 50px;
+  background: none;
+  border: none;
+  background-color: #000000;
+  border-radius: 5px;
+  color: white;
+  padding: 5px 18px;
+  display: flex;
+  outline: none;
+  margin: 0 5px;
+  text-align: center;
+  cursor: pointer;
+}
+#gallery-buttons-holder img {
+  width: 35px;
+}
+
+#about-artwork .description-holder {
+  padding: 30px;
+  border: 1px solid rgb(216, 216, 216);
+}
+#about-artwork .description-holder p {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+#about-artwork .description-holder span {
+  color: #7b7b7b;
+}
+
+.scrolling-wrapper {
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+}
+.scrolling-wrapper > .col {
+  flex: 0 0 auto;
+  max-width: 330px;
+}
+.scrolling-wrapper a {
+  text-decoration: none;
+  color: #333333;
+}
+
+#curators-select .scrolling-wrapper > .col {
+  max-width: 280px;
+}
+#curators-select .scrolling-wrapper > .col img {
+  height: 350px;
+}
+#curators-select .scrolling-wrapper > .col em {
+  font-size: 14px;
 }
