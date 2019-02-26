@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/script.js"></script>
   </head>
   <body>
     <section id="topNav">
@@ -18,6 +19,7 @@
         <li><a href="">REGISTER</a></li>
       </ul>
     </section>
+    
 
     <section id="mainNav">
       <div>
@@ -32,16 +34,29 @@
       </ul>
     </section>
 
+    <section class="container-fluid" id="fullscreen">
+      <button onclick="activateFullscreen()" id="closefullscreenbtn">
+        X -  Close Fullscreen
+      </button>
+        <img id="fullscreen-art" src="./img/art-detail.jpg" alt=""  />
+      </section>
+
     <section class="container" id="artdisplay">
       <hr class="divider" />
       <div class="row">
         <div class="col-md-8 artholder">
+            
           <div class="row" id="gallery-buttons-holder">
-            <button>
-              <img src="./img/sofa.png" alt="View in Room" />
-            </button>
+            <!-- <a href="#scalable-art">
+                <img src="./img/sofa.png" alt="View in Room" />
+              
+            </a > -->
+            
 
-            <button>
+            <button onclick="activateRoom()"  id="roombtn">
+              <img src="./img/sofa.png" alt="View In Room" />
+            </button>
+            <button onclick="activateFullscreen()">
               <img src="./img/expand.png" alt="View Fullscreen" />
             </button>
 
@@ -49,7 +64,12 @@
               <img src="./img/favorite.png" alt="Add to Favorites" />
             </button>
           </div>
-          <img src="./img/art-detail.jpg" alt="" />
+          <div id="roombg">
+              <img src="./img/room_view.jpg" alt="">
+            </div>
+          
+          <img id="scalable-art" src="./img/art-detail.jpg" alt=""  />
+          
         </div>
         <div class="col-md-4">
           <div id="infoholder">
@@ -98,10 +118,11 @@
           </div>
         </div>
       </div>
-      <hr class="divider" />
+     
     </section>
 
     <section class="container" id="about-artwork">
+        <hr class="divider" />
       <div>
         <p class="subtitle">About the work</p>
         <hr class="underline" />
