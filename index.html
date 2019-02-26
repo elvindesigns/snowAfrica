@@ -19,17 +19,39 @@
     </section>
 
     <section id="mainNav">
-      <div>
-        <a href="index.html"><img src="./img/logo_top.jpg" alt=""/></a>
-      </div>
-      <ul>
-        <li><a href="artworks.html">Artworks</a></li>
-        <li><a href="">Auctions</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Fair</a></li>
-        <li><a href="">Magazine</a></li>
-      </ul>
-    </section>
+        <div>
+          <a href="index.html"><img src="./img/logo_top.jpg" alt=""/></a>
+        </div>
+       <div id="mobilenav">
+          <input id="burger" type="checkbox" />
+  
+        <label for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav >
+            <ul>
+                <li><a href="index.html"  class="selected">Home</a></li>
+                <li><a href="artworks.html">Artworks</a></li>
+                <li><a href="">Auctions</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Fair</a></li>
+                <li><a href="">Magazine</a></li>
+              </ul>
+        </nav>
+       </div>
+       <nav id="desktopnav" >
+          <ul>
+              <li><a href="index.html"  class="selected">Home</a></li>
+              <li><a href="artworks.html">Artworks</a></li>
+              <li><a href="">Auctions</a></li>
+              <li><a href="">Gallery</a></li>
+              <li><a href="">Fair</a></li>
+              <li><a href="">Magazine</a></li>
+            </ul>
+      </nav>
+      </section>
 
     <section id="headerBg">
       <h1 id="title">Collect And Discover Art</h1>
@@ -45,15 +67,18 @@
     <section class="container" id="curators">
       <div class="row">
         <div class="col-sm">
-          <h2><span>From</span><br />OUR<br />CURATORS</h2>
-          <hr class="underline" />
-          <p>
-            Discover new &amp; original <br />
-            artwork from around the world
-          </p>
-          <button class="outlinebutton">
-            View Collection
-          </button>
+          <div class="title-padding">
+              <h2><span>From</span><br />OUR<br />CURATORS</h2>
+              <hr class="underline" />
+              <p>
+                  Discover new &amp; original <br />
+                  artwork from around the world
+                </p>
+                <button class="outlinebutton">
+                  View Collection
+                </button>
+          </div>
+         
           <div class="pic-card">
             <img src="./img/cursel1.jpg" alt="" />
           </div>
@@ -79,14 +104,16 @@
     </section>
 
     <section class="container" id="categories">
-      <div class="row">
-        <h3 class="section-title">Explore Our Categories</h3>
-      </div>
-      <div class="row"><hr class="underline" /></div>
-      <div class="row section-subtitle">
-        <p>
-          Choose from our popular categories
-        </p>
+      <div class="title-padding">
+          <div class="row">
+              <h3 class="section-title">Explore Our Categories</h3>
+            </div>
+            <div class="row"><hr class="underline" /></div>
+            <div class="row section-subtitle">
+              <p>
+                Choose from our popular categories
+              </p>
+            </div>
       </div>
       <div class="row">
         <div class="col">
@@ -120,14 +147,16 @@
     </section>
 
     <section class="container" id="popular-artists">
-      <div class="row">
-        <h3 class="section-title">Works by Popular Artists</h3>
-      </div>
-      <div class="row"><hr class="underline" /></div>
-      <div class="row section-subtitle">
-        <p>
-          See the work from our popular artists
-        </p>
+      <div class="title-padding">
+          <div class="row">
+              <h3 class="section-title">Works by Popular Artists</h3>
+            </div>
+            <div class="row"><hr class="underline" /></div>
+            <div class="row section-subtitle">
+              <p>
+                See the work from our popular artists
+              </p>
+            </div>
       </div>
       <div class="row">
         <div class="col ">
@@ -224,15 +253,17 @@
     </section>
 
     <section class="container" id="price-range">
-      <div class="row">
-        <h3 class="section-title">Artworks by Price</h3>
-      </div>
-      <div class="row"><hr class="underline" /></div>
-      <div class="row section-subtitle">
-        <p>
-          See artworks by price range
-        </p>
-      </div>
+     <div class="title-padding">
+        <div class="row">
+            <h3 class="section-title">Artworks by Price</h3>
+          </div>
+          <div class="row"><hr class="underline" /></div>
+          <div class="row section-subtitle">
+            <p>
+              See artworks by price range
+            </p>
+          </div>
+     </div>
       <div class="row">
         <div class="col-md-4">
           <div class="pic-card">
@@ -299,16 +330,18 @@
 
     <section class="container" id="why-snow">
       <div class="row">
-        <div class="col-md-5">
-          <h2><span>Why</span><br />SNOW AFRICA</h2>
-          <hr class="underline" />
-          <p>
-            A Platform for collecting <br />
-            and discovering Art.
-          </p>
-          <button class="outlinebutton">
-            More
-          </button>
+        <div class="title-padding">
+            <div class="col-md-5">
+                <h2><span>Why</span><br />SNOW AFRICA</h2>
+                <hr class="underline" />
+                <p>
+                  A Platform for collecting <br />
+                  and discovering Art.
+                </p>
+                <button class="outlinebutton">
+                  More
+                </button>
+              </div>
         </div>
         <div class="col-md-7"><img src="./img/vid-bg.jpg" alt="" /></div>
       </div>
