@@ -20,8 +20,39 @@ body {
 }
 
 /* MISC */
+.margin-20 {
+  margin: 20px 0;
+}
+.margin-bottom-20 {
+  margin: 0 0 20px;
+}
+.padding-20 {
+  padding: 20px;
+}
+.padding-bottom-20 {
+  padding: 0 0 20px;
+}
+.text-center {
+  text-align: center;
+}
 .title-padding {
   padding: 0 30px;
+}
+.rec-items {
+  background-color: #f6f6f6;
+  padding: 30px 0;
+}
+.rec-items span {
+  font-weight: bolder;
+}
+.rec-items em {
+  font-size: 12px;
+  margin: 40px 0 30px;
+}
+.img-prev {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 #mobilenav {
   display: none;
@@ -771,6 +802,10 @@ footer #logobottom {
   margin-right: 25px;
   font-size: 22px;
 }
+#artdisplay #infoholder #section1 a {
+  text-decoration: none;
+  color: #333333;
+}
 
 #artdisplay #infoholder #section2 {
   margin-top: 30px;
@@ -833,6 +868,10 @@ footer #logobottom {
 #gallery-buttons-holder img {
   width: 35px;
 }
+.description-holder {
+  padding: 30px;
+  border: 1px solid rgb(216, 216, 216);
+}
 
 #about-artwork .description-holder {
   padding: 30px;
@@ -857,6 +896,17 @@ footer #logobottom {
 .scrolling-wrapper a {
   text-decoration: none;
   color: #333333;
+}
+.rec-art-holder {
+  margin-bottom: 40px;
+}
+.rec-art-holder .scrolling-wrapper > .col {
+  max-width: 147px;
+}
+.rec-art-holder .scrolling-wrapper > .col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #curators-select .scrolling-wrapper > .col {
@@ -888,6 +938,56 @@ footer #logobottom {
 }
 #closefullscreenbtn:hover {
   background-color: rgb(252, 176, 64);
+}
+
+#artist-profile {
+  margin-top: 40px;
+}
+#artist-profile .cardCover {
+  height: 400px;
+}
+#artist-profile .artistcounter {
+  background-color: #eeeeee;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+/* #artist-profile #artist-fav {
+  background-color: #eeeeee;
+  padding: 15px;
+  margin-bottom: 20px;
+} */
+#artist-profile #artist-fav {
+}
+#artist-profile #artist-fav img {
+  width: 100%;
+}
+
+#artist-fav div:nth-of-type(2) {
+  margin: 0 5px;
+}
+
+#rec-art-holder {
+  height: 200px;
+}
+.rec-art-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 20px;
+}
+.rec-art-title a {
+  text-decoration: none;
+  color: #333333;
+}
+.recent-title {
+  margin: 0 0 20px;
+}
+#profile-desc p {
+  margin-bottom: 15px;
+}
+#profile-desc span {
+  font-weight: bold;
+  margin-right: 10px;
+  display: inline-block;
 }
 @media only screen and (max-width: 992px) {
   .scaled-art {

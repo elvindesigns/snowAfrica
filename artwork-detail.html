@@ -19,63 +19,60 @@
         <li><a href="">REGISTER</a></li>
       </ul>
     </section>
-    
 
     <section id="mainNav">
       <div>
         <a href="index.html"><img src="./img/logo_top.jpg" alt=""/></a>
       </div>
-     <div id="mobilenav">
+      <div id="mobilenav">
         <input id="burger" type="checkbox" />
 
-      <label for="burger">
+        <label for="burger">
           <span></span>
           <span></span>
           <span></span>
-      </label>
-      <nav >
+        </label>
+        <nav>
           <ul>
-              <li><a href="index.html" >Home</a></li>
-              <li><a href="artworks.html" class="selected">Artworks</a></li>
-              <li><a href="">Auctions</a></li>
-              <li><a href="">Gallery</a></li>
-              <li><a href="">Fair</a></li>
-              <li><a href="">Magazine</a></li>
-            </ul>
-      </nav>
-     </div>
-     <nav id="desktopnav" >
-        <ul>
-            <li><a href="index.html" >Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="artworks.html" class="selected">Artworks</a></li>
             <li><a href="">Auctions</a></li>
             <li><a href="">Gallery</a></li>
             <li><a href="">Fair</a></li>
             <li><a href="">Magazine</a></li>
           </ul>
-    </nav>
+        </nav>
+      </div>
+      <nav id="desktopnav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="artworks.html" class="selected">Artworks</a></li>
+          <li><a href="">Auctions</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Fair</a></li>
+          <li><a href="">Magazine</a></li>
+        </ul>
+      </nav>
     </section>
 
     <section class="container-fluid" id="fullscreen">
       <button onclick="activateFullscreen()" id="closefullscreenbtn">
-        X -  Close Fullscreen
+        X - Close Fullscreen
       </button>
-        <img id="fullscreen-art" src="./img/art-detail.jpg" alt=""  />
-      </section>
+      <img id="fullscreen-art" src="./img/art-detail.jpg" alt="" />
+    </section>
 
     <section class="container" id="artdisplay">
       <hr class="divider" />
       <div class="row">
         <div class="col-md-8 artholder">
-            
           <div class="row" id="gallery-buttons-holder">
             <!-- <a href="#scalable-art">
                 <img src="./img/sofa.png" alt="View in Room" />
               
             </a > -->
-            
 
-            <button onclick="activateRoom()"  id="roombtn">
+            <button onclick="activateRoom()" id="roombtn">
               <img src="./img/sofa.png" alt="View In Room" />
             </button>
             <button onclick="activateFullscreen()">
@@ -87,17 +84,16 @@
             </button>
           </div>
           <div id="roombg">
-              <img src="./img/room_view.jpg" alt="">
-            </div>
-          
-          <img id="scalable-art" src="./img/art-detail.jpg" alt=""  />
-          
+            <img src="./img/room_view.jpg" alt="" />
+          </div>
+
+          <img id="scalable-art" src="./img/art-detail.jpg" alt="" />
         </div>
         <div class="col-md-4">
           <div id="infoholder">
             <div id="section1">
-              <h4>Elvin Opara</h4>
-              <img src="./img/artist1.jpg" class="avatar" alt="" />
+              <a href="./artist.html"><h4>Hellen Picaso</h4></a>
+              <img src="./img/artist2.jpg" class="avatar" alt="" />
             </div>
             <div id="section2">
               <em>Waters, 1958</em>
@@ -140,11 +136,10 @@
           </div>
         </div>
       </div>
-     
     </section>
 
     <section class="container" id="about-artwork">
-        <hr class="divider" />
+      <hr class="divider" />
       <div>
         <p class="subtitle">About the work</p>
         <hr class="underline" />
@@ -359,8 +354,8 @@
             <div class="norm-card">
               <img class="cardCover" src="./img/cur2.jpg" alt="" />
               <div class="card-content">
-                  <h4>Philip Moore</h4>
-                  <em>Venice, United States</em>
+                <h4>Philip Moore</h4>
+                <em>Venice, United States</em>
               </div>
             </div>
           </a>
@@ -370,8 +365,8 @@
             <div class="norm-card">
               <img class="cardCover" src="./img/cur3.jpg" alt="" />
               <div class="card-content">
-                  <h4>Rebecca Wilson</h4>
-                  <em>Venice, United States</em>
+                <h4>Rebecca Wilson</h4>
+                <em>Venice, United States</em>
               </div>
             </div>
           </a>
@@ -381,8 +376,8 @@
             <div class="norm-card">
               <img class="cardCover" src="./img/cur4.jpg" alt="" />
               <div class="card-content">
-                  <h4>Betty Salman</h4>
-                  <em>Manchester, United Kingdom</em>
+                <h4>Betty Salman</h4>
+                <em>Manchester, United Kingdom</em>
               </div>
             </div>
           </a>
@@ -393,8 +388,8 @@
             <div class="norm-card">
               <img class="cardCover" src="./img/cur5.jpg" alt="" />
               <div class="card-content">
-                  <h4>Robin Swansen</h4>
-                  <em>Canada</em>
+                <h4>Robin Swansen</h4>
+                <em>Canada</em>
               </div>
             </div>
           </a>
@@ -404,133 +399,132 @@
     </section>
 
     <section class="container">
-        <div>
-          <p class="subtitle">Similar Artworks by Other Artist</p>
-          <hr class="underline" />
+      <div>
+        <p class="subtitle">Similar Artworks by Other Artist</p>
+        <hr class="underline" />
+      </div>
+      <div class="row scrolling-wrapper">
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart4.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="row scrolling-wrapper">
-          
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart4.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
+
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart5.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
               </div>
-            </a>
-          </div>
-  
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart5.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart6.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart7.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart8.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart1.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart2.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart3.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col ">
-            <a href="artwork-detail.html">
-              <div class="norm-card">
-                <img class="cardCover" src="./img/popart4.jpg" alt="" />
-                <div class="card-content">
-                  <h4>N120,000</h4>
-                  <p>Louis Nevelson</p>
-                  <p>Waters, 1958</p>
-                  <p>Gallery Art</p>
-                </div>
-              </div>
-            </a>
-          </div>
+            </div>
+          </a>
         </div>
-        <hr class="divider" />
-      </section>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart6.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart7.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart8.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart1.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart2.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart3.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col ">
+          <a href="artwork-detail.html">
+            <div class="norm-card">
+              <img class="cardCover" src="./img/popart4.jpg" alt="" />
+              <div class="card-content">
+                <h4>N120,000</h4>
+                <p>Louis Nevelson</p>
+                <p>Waters, 1958</p>
+                <p>Gallery Art</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <hr class="divider" />
+    </section>
 
     <footer class="container">
       <div class="row">
