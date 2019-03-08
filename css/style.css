@@ -989,6 +989,114 @@ footer #logobottom {
   margin-right: 10px;
   display: inline-block;
 }
+
+/* SIGN-IN */
+.form-holder {
+  display: flex;
+  justify-content: center;
+  /* height: 600px; */
+  padding: 40px;
+  border: 1px solid rgb(189, 189, 189);
+  width: 45%;
+  min-width: 300px;
+  margin: 80px auto;
+}
+.form-holder h4 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.form-holder .form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: "OpenSansLight";
+}
+form {
+  margin-top: 20px;
+}
+form > div {
+  position: relative;
+  overflow: hidden;
+}
+.form-holder hr {
+  border: none;
+  height: 1px;
+  background-color: #e1e1e1;
+}
+.form-holder img {
+  width: 150px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px;
+}
+.form-holder .haveaccount {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.form-holder .agreement {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 10px;
+  color: #7b7b7b;
+}
+.form-holder .haveaccount span {
+  color: rgb(252, 176, 64);
+  font-family: "OpenSansBold";
+}
+form input,
+form textarea {
+  width: 100%;
+  border: 1px solid rgb(199, 199, 199);
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 15px 15px;
+  outline: 0;
+  margin-bottom: 8px;
+}
+form label {
+  font-size: 12px;
+}
+form p {
+  font-size: 10px;
+  margin-bottom: 15px;
+  color: #7b7b7b;
+}
+#facebook {
+  background-color: #3b5997;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-family: "OpenSansBold";
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#google {
+  background-color: #f05050;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-family: "OpenSansBold";
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#submit-button {
+  background-color: rgb(252, 176, 64);
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 15px;
+  font-family: "OpenSansBold";
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
 @media only screen and (max-width: 992px) {
   .scaled-art {
     transform: translate(0, -300%);

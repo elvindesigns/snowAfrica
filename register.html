@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register | SnowAfrica</title>
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="topNav">
+      <input type="text" placeholder="Search" />
+      <ul>
+        <li><a href="./sign-in.html">SIGN IN</a></li>
+        <!-- <li>|</li>
+        <li><a href="./register.html">REGISTER</a></li> -->
+      </ul>
+    </section>
+
+    <section id="mainNav">
+      <div>
+        <a href="index.html"><img src="./img/logo_top.jpg" alt=""/></a>
+      </div>
+      <div id="mobilenav">
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="selected">Home</a></li>
+            <li><a href="artworks.html">Artworks</a></li>
+            <li><a href="">Auctions</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Fair</a></li>
+            <li><a href="">Magazine</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav id="desktopnav">
+        <ul>
+          <li><a href="index.html" class="selected">Home</a></li>
+          <li><a href="artworks.html">Artworks</a></li>
+          <li><a href="">Auctions</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Fair</a></li>
+          <li><a href="">Magazine</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section class="container" id="sign-in-form">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-holder">
+            <div>
+              <h4>Register</h4>
+              <hr />
+              <form class="form">
+                <h2>Welcome !</h2>
+                <button id="facebook">Sign In With Facebook</button>
+                <button id="google">Sign In With Google</button>
+                <div>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    required
+                    placeholder="Full Name"
+                  />
+                  <p>We ask that you provide your legal full name</p>
+                </div>
+                <div>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    required
+                    placeholder="Password"
+                  />
+                </div>
+                <div>
+                  <input
+                    id="confirm-password"
+                    name="confirm-password"
+                    type="password"
+                    required
+                    placeholder="Confirm Password"
+                  />
+                </div>
+                <a href="./verify-email.html" id="submit-button">Next</a>
+              </form>
+              <p class="haveaccount">
+                Already have an account?<span> Sign In</span>
+              </p>
+              <hr />
+              <p class="agreement">
+                By signing up, you agree to our Terms of Use and Privacy Policy.
+                You'll receive weekly updates on recently added artworks, new
+                curated collections, featured artists, and more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
