@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Upload Art | Snow Africa</title>
+
+    <link rel="stylesheet" href="./css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <section id="topNav">
+      <input type="text" placeholder="Search" />
+      <ul>
+        <!-- <li><a href="./sign-in.html">SIGN IN</a></li>
+          <li>|</li>
+          <li><a href="./register.html">REGISTER</a></li> -->
+        <li class="dropdown">
+          <button class="dropbtn" onclick="myFunction()">
+            Hellen Picaso
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+            <a href="#">Profile</a>
+            <a href="#">Upload Art</a>
+            <a href="#">Log Out</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="mainNav">
+      <div>
+        <a href="index.html"><img src="./img/logo_top.jpg" alt=""/></a>
+      </div>
+      <div id="mobilenav">
+        <input id="burger" type="checkbox" />
+
+        <label for="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="selected">Home</a></li>
+            <li><a href="artworks.html">Artworks</a></li>
+            <li><a href="">Auctions</a></li>
+            <li><a href="">Gallery</a></li>
+            <li><a href="">Fair</a></li>
+            <li><a href="">Magazine</a></li>
+          </ul>
+        </nav>
+      </div>
+      <nav id="desktopnav">
+        <ul>
+          <li><a href="index.html" class="selected">Home</a></li>
+          <li><a href="artworks.html">Artworks</a></li>
+          <li><a href="">Auctions</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Fair</a></li>
+          <li><a href="">Magazine</a></li>
+        </ul>
+      </nav>
+    </section>
+    <section id="headerBg">
+      <h1 id="title">Selling on Snow AFrica</h1>
+      <h4>
+        Upload your work and start selling to collectors as well as share with
+        your community
+      </h4>
+      <div class="margin-20"></div>
+    </section>
+
+    <section class="container" id="upload-tab">
+      <div class="row">
+        <div class="col padding-20">
+          <div id="progress">
+            <div id="progress-bg"></div>
+            <div id="progress-rate"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row tab" id="tab-upload">
+        <div class="col padding-20 border-line">
+          <div id="upload-box">
+            <div>
+              <h2>Upload Art</h2>
+              <p>
+                Upload an image file which is at least 1500 x 1200 pixels and
+                less than 50mb
+              </p>
+              <div>
+                <label for="uploadimage"
+                  ><img id="image-loaded" src="./img/image.png" alt="your image"
+                /></label>
+
+                <div>
+                  <input
+                    type="file"
+                    id="uploadimage"
+                    onchange="readURL(this);"
+                  />
+                  <div class="row">
+                    <div class="col">
+                      <label class="yellowbutton margin-20" for="uploadimage">
+                        Select Image
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="formnavbtn">
+                <button class="yellowbutton disabled">
+                  Prev
+                </button>
+              </div>
+            </div>
+            <div class="col justify-content-end flex">
+              <div class="formnavbtn">
+                <button
+                  class="yellowbutton "
+                  onclick="openCategory(event, 'tab-category')"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row tab" id="tab-category">
+        <div class="col padding-20 border-line">
+          <div id="upload-box">
+            <div>
+              <h2>Category</h2>
+              <p>
+                Select a product category
+              </p>
+              <div class="row">
+                <div class="col-md-4 ">
+                  <div
+                    class="norm-card"
+                    id="Painting"
+                    onclick="selectCategory(event, 'Painting')"
+                  >
+                    <img class="cardCover" src="./img/popart1.jpg" alt="" />
+                    <div class="card-content">
+                      <h4>Painting</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 ">
+                  <div
+                    class="norm-card"
+                    id="Photography"
+                    onclick="selectCategory(event, 'Photography')"
+                  >
+                    <img class="cardCover" src="./img/popart2.jpg" alt="" />
+                    <div class="card-content">
+                      <h4>Photography</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 ">
+                  <div
+                    class="norm-card"
+                    id="Drawing"
+                    onclick="selectCategory(event, 'Drawing')"
+                  >
+                    <img class="cardCover" src="./img/popart3.jpg" alt="" />
+                    <div class="card-content">
+                      <h4>Drawing</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 ">
+                  <div
+                    class="norm-card"
+                    id="Sculpture"
+                    onclick="selectCategory(event, 'Sculpture')"
+                  >
+                    <img class="cardCover" src="./img/popart4.jpg" alt="" />
+                    <div class="card-content">
+                      <h4>Sculpture</h4>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 ">
+                  <div
+                    class="norm-card"
+                    id="Print"
+                    onclick="selectCategory(event, 'Print')"
+                  >
+                    <img class="cardCover" src="./img/popart5.jpg" alt="" />
+                    <div class="card-content">
+                      <h4>Print Making</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 ">
+                  <div
+                    class="norm-card"
+                    id="Media"
+                    onclick="selectCategory(event, 'Media')"
+                  >
+                    <img class="cardCover" src="./img/popart6.jpg" alt="" />
+                    <div class="card-content">
+                      <h4>New Media</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="formnavbtn">
+                <button
+                  class="yellowbutton"
+                  onclick="openUpload(event, 'tab-upload')"
+                >
+                  Prev
+                </button>
+              </div>
+            </div>
+            <div class="col justify-content-end flex">
+              <div class="formnavbtn">
+                <button
+                  class="yellowbutton "
+                  onclick="openDescription(event, 'tab-description')"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row tab" id="tab-description">
+        <div class="col padding-20 border-line">
+          <div id="upload-box">
+            <div>
+              <h2>Title</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input
+                type="text"
+                name=""
+                id="art-title"
+                placeholder="Enter Title of Artwork"
+              />
+            </div>
+          </div>
+          <div id="upload-box" class="margin-20">
+            <div>
+              <h2>Description</h2>
+              <p class="desc">
+                Collectors tend to appreciate works more if they know the story
+                behind them, so be sure to write informative artwork
+                description.
+              </p>
+              <div class="tips">
+                <p>Tips:</p>
+                <p>Who inspired the Artwork?</p>
+                <p>What do you hope its viewers will feel/ think?</p>
+                <p>Why do you choose the medium/ subject/ style?</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="formnavbtn">
+                <button
+                  class="yellowbutton"
+                  onclick="openCategory(event, 'tab-category')"
+                >
+                  Prev
+                </button>
+              </div>
+            </div>
+            <div class="col justify-content-end flex">
+              <div class="formnavbtn">
+                <button
+                  class="yellowbutton "
+                  onclick="openPrice(event, 'tab-price')"
+                >
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row tab" id="tab-price">
+        <div class="col padding-20 border-line">
+          <div id="upload-box">
+            <div>
+              <h2>Price</h2>
+            </div>
+          </div>
+
+          <div id="upload-box" class="margin-20"></div>
+
+          <div class="row">
+            <div class="col">
+              <div class="formnavbtn">
+                <button
+                  class="yellowbutton"
+                  onclick="openDescription(event, 'tab-price')"
+                >
+                  Prev
+                </button>
+              </div>
+            </div>
+            <div class="col justify-content-end flex">
+              <div class="formnavbtn">
+                <button class="yellowbutton ">
+                  Next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container">
+      <hr class="divider" />
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li><h4>For Buyers</h4></li>
+            <li><a href="#">Art Advisory Services</a></li>
+            <li><a href="#">Buyers FAQ</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Art Prints</a></li>
+            <li><a href="#">Curators Circle</a></li>
+            <li><a href="#">Catalogue</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>For Artist</h4></li>
+            <li><a href="#">Why Sell</a></li>
+            <li><a href="#">Artist Handbook</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>About Us</h4></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>Snow Africa</h4></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Copyright Policy</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>Top Categories</h4></li>
+            <li><a href="#">Paintings</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Sculpture</a></li>
+            <li><a href="#">Drawings</a></li>
+            <li><a href="#">Collage</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" id="logobottom">
+        <div class="col"><img src="./img/logo_bottom.jpg" alt="" /></div>
+      </div>
+    </footer>
+  </body>
+</html>

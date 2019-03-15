@@ -28,3 +28,82 @@ function activateFullscreen() {
   isFullscreenOn = !isFullscreenOn;
   console.log(isFullscreenOn);
 }
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches(".dropbtn")) {
+    var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains("show")) {
+      myDropdown.classList.remove("show");
+    }
+  }
+};
+
+function readURL(input) {
+  console.log("hello");
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      document
+        .getElementById("image-loaded")
+        .setAttribute("src", e.target.result);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+function selectCategory(event, categoryName) {
+  var catName = document.getElementsByClassName("norm-card");
+  for (i = 0; i < catName.length; i++) {
+    catName[i].className = catName[i].className.replace(
+      " norm-card-active",
+      ""
+    );
+  }
+  // document.getElementById(categoryName).style.display = "block";
+  event.currentTarget.className += " norm-card-active";
+}
+function openUpload(event, tabName) {
+  var tabName = document.getElementsByClassName("tab");
+  for (i = 0; i < tabName.length; i++) {
+    tabName[i].style.display = "none";
+  }
+  console.log(tabName);
+  document.getElementById("tab-upload").style.display = "block";
+  document.getElementById("progress-rate").style.width = "5%";
+}
+function openCategory(event, tabName) {
+  var tabName = document.getElementsByClassName("tab");
+  for (i = 0; i < tabName.length; i++) {
+    tabName[i].style.display = "none";
+  }
+  console.log(tabName);
+  document.getElementById("tab-category").style.display = "block";
+  document.getElementById("progress-rate").style.width = "35%";
+}
+function openDescription(event, tabName) {
+  var tabName = document.getElementsByClassName("tab");
+  for (i = 0; i < tabName.length; i++) {
+    tabName[i].style.display = "none";
+  }
+  console.log(tabName);
+  document.getElementById("tab-description").style.display = "block";
+  document.getElementById("progress-rate").style.width = "75%";
+}
+function openPrice(event, tabName) {
+  var tabName = document.getElementsByClassName("tab");
+  for (i = 0; i < tabName.length; i++) {
+    tabName[i].style.display = "none";
+  }
+  console.log(tabName);
+  document.getElementById("tab-price").style.display = "block";
+  document.getElementById("progress-rate").style.width = "100%";
+}
