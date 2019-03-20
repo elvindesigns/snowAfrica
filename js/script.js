@@ -122,3 +122,81 @@ function adjustprice(val) {
   newPrice = newPrice.toLocaleString();
   finalprice.innerText = newPrice;
 }
+function getTimer() {
+  timeArr = [
+    { id: "bid-01", date: "March 20, 2019 15:37:25" },
+    { id: "bid-02", date: "March 21, 2019 03:45:23" },
+    { id: "bid-03", date: "March 21, 2019 17:37:25" },
+    { id: "bid-04", date: "March 22, 2019 19:45:23" }
+  ];
+  timeArr.forEach(element => {
+    getCountDown(element);
+  });
+  // var countDownDate = new Date("March 21, 2019 15:37:25").getTime();
+  function getCountDown(element) {
+    countDownDate = new Date(element.date).getTime();
+    var x = setInterval(function() {
+      // Get todays date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      function addprezero(val) {
+        var value = String(val);
+
+        if (value.length < 2) {
+          return (value = "0" + value);
+        } else {
+          return value;
+        }
+      }
+      // Display the result in the element with id="demo"
+      var dateArray = [];
+      var itemDate =
+        addprezero(days) +
+        " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+        addprezero(hours) +
+        " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+        addprezero(minutes) +
+        " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+        addprezero(seconds) +
+        "";
+      // dateArray.push(itemdate);
+
+      // console.log(element.id);
+      document.getElementById(element.id).innerHTML =
+        addprezero(days) +
+        " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+        addprezero(hours) +
+        " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+        addprezero(minutes) +
+        " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+        addprezero(seconds) +
+        "";
+      // console.log(
+      //   addprezero(days) +
+      //     " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+      //     addprezero(hours) +
+      //     " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+      //     addprezero(minutes) +
+      //     " &nbsp;&nbsp;:&nbsp;&nbsp; " +
+      //     addprezero(seconds) +
+      //     ""
+      // );
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById(element.id).innerHTML = "EXPIRED";
+      }
+    }, 1000);
+  }
+}
