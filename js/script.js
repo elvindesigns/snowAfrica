@@ -15,7 +15,6 @@ function activateRoom() {
     roombg.classList.remove("activeroom");
   }
   isOn = !isOn;
-  console.log(isOn);
 }
 
 function activateFullscreen() {
@@ -26,7 +25,6 @@ function activateFullscreen() {
     fullscreenbtn.classList.remove("activefullscreen");
   }
   isFullscreenOn = !isFullscreenOn;
-  console.log(isFullscreenOn);
 }
 
 /* When the user clicks on the button, 
@@ -46,7 +44,6 @@ window.onclick = function(e) {
 };
 
 function readURL(input) {
-  console.log("hello");
   if (input.files && input.files[0]) {
     var reader = new FileReader();
 
@@ -76,7 +73,7 @@ function openUpload(event, tabName) {
   for (i = 0; i < tabName.length; i++) {
     tabName[i].style.display = "none";
   }
-  console.log(tabName);
+
   document.getElementById("tab-upload").style.display = "block";
   document.getElementById("progress-rate").style.width = "5%";
 }
@@ -85,7 +82,7 @@ function openCategory(event, tabName) {
   for (i = 0; i < tabName.length; i++) {
     tabName[i].style.display = "none";
   }
-  console.log(tabName);
+
   document.getElementById("tab-category").style.display = "block";
   document.getElementById("progress-rate").style.width = "35%";
 }
@@ -94,16 +91,34 @@ function openDescription(event, tabName) {
   for (i = 0; i < tabName.length; i++) {
     tabName[i].style.display = "none";
   }
-  console.log(tabName);
+
   document.getElementById("tab-description").style.display = "block";
-  document.getElementById("progress-rate").style.width = "75%";
+  document.getElementById("progress-rate").style.width = "55%";
 }
 function openPrice(event, tabName) {
   var tabName = document.getElementsByClassName("tab");
   for (i = 0; i < tabName.length; i++) {
     tabName[i].style.display = "none";
   }
-  console.log(tabName);
+
   document.getElementById("tab-price").style.display = "block";
+  document.getElementById("progress-rate").style.width = "80%";
+}
+function openFinal(event, tabName) {
+  var tabName = document.getElementsByClassName("tab");
+  for (i = 0; i < tabName.length; i++) {
+    tabName[i].style.display = "none";
+  }
+
+  document.getElementById("tab-finished").style.display = "block";
   document.getElementById("progress-rate").style.width = "100%";
+}
+function adjustprice(val) {
+  var finalprice = document.getElementById("final-price");
+
+  var value = Number(val);
+
+  var newPrice = value + (15 / 100) * value;
+  newPrice = newPrice.toLocaleString();
+  finalprice.innerText = newPrice;
 }

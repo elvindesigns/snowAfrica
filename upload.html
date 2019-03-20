@@ -309,6 +309,51 @@
           <div id="upload-box">
             <div>
               <h2>Price</h2>
+              <p class="desc">
+                Price your artwork and see the "all in" price the collector will
+                see.
+              </p>
+            </div>
+          </div>
+          <div class="price-form">
+            <div class="row">
+              <div class="col">
+                <label class="price-label" for="art-price"
+                  >Price of Artwork: &#8358;</label
+                >
+              </div>
+              <div class="col">
+               
+                <input
+                  type="text"
+                  name="txt"
+                  id="art-price"
+                  placeholder="Enter Price of Artwork"
+                  onkeyup="adjustprice(this.value)"
+                  value=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="price-label">Our Rates</div>
+              </div>
+              <div class="col">
+                <div id="profit">15% of Artwork Price</div>
+              </div>
+            </div>
+            <hr class="divider" />
+            <div class="row">
+              <div class="col">
+                <div class="price-label">Price the collector will see</div>
+              </div>
+              <div class="col">
+                <div id="collector-price">
+                  <p>&#8358; <span  id="final-price"></span></p>
+                  
+                  
+                </div>
+              </div>
             </div>
           </div>
 
@@ -327,7 +372,7 @@
             </div>
             <div class="col justify-content-end flex">
               <div class="formnavbtn">
-                <button class="yellowbutton ">
+                <button class="yellowbutton " onclick="openFinal(event, 'tab-finished')">
                   Next
                 </button>
               </div>
@@ -335,6 +380,32 @@
           </div>
         </div>
       </div>
+      <div class="row tab" id="tab-finished">
+          <div class="col padding-20 border-line">
+            <div id="upload-box">
+              <div>
+                <h2>Upload Succesfull</h2>
+                <p class="desc">
+                  Your artwork has been uploaded succesfully
+                </p>
+              </div>
+            </div>
+            
+  
+            <div id="upload-box" class="margin-20"></div>
+  
+            <div class="row">
+
+              <div class="col justify-content-end flex">
+                <div class="formnavbtn">
+                  <a href="./artist.html" class="yellowbutton ">
+                    Finish
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     </section>
     <footer class="container">
       <hr class="divider" />
