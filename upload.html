@@ -48,9 +48,9 @@
             <li><a href="index.html" class="selected">Home</a></li>
             <li><a href="artworks.html">Artworks</a></li>
             <li><a href="auction.html">Auctions</a></li>
-            <li><a href="">Gallery</a></li>
-            <li><a href="">Fair</a></li>
-            <li><a href="">Magazine</a></li>
+            <li><a href="#">Gallery</a></li>
+
+            <li><a href="magazine.html">Magazine</a></li>
           </ul>
         </nav>
       </div>
@@ -58,10 +58,10 @@
         <ul>
           <li><a href="index.html" class="selected">Home</a></li>
           <li><a href="artworks.html">Artworks</a></li>
-          <li><a href="">Auctions</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="">Fair</a></li>
-          <li><a href="">Magazine</a></li>
+          <li><a href="auction.html">Auctions</a></li>
+          <li><a href="#">Gallery</a></li>
+
+          <li><a href="magazine.html">Magazine</a></li>
         </ul>
       </nav>
     </section>
@@ -323,14 +323,12 @@
                 >
               </div>
               <div class="col">
-               
                 <input
                   type="text"
                   name="txt"
                   id="art-price"
                   placeholder="Enter Price of Artwork"
                   onkeyup="adjustprice(this.value)"
-                 
                   value=""
                 />
               </div>
@@ -350,9 +348,7 @@
               </div>
               <div class="col">
                 <div id="collector-price">
-                  <p>&#8358; <span  id="final-price"></span></p>
-                  
-                  
+                  <p>&#8358; <span id="final-price"></span></p>
                 </div>
               </div>
             </div>
@@ -373,7 +369,10 @@
             </div>
             <div class="col justify-content-end flex">
               <div class="formnavbtn">
-                <button class="yellowbutton " onclick="openFinal(event, 'tab-finished')">
+                <button
+                  class="yellowbutton "
+                  onclick="openFinal(event, 'tab-finished')"
+                >
                   Next
                 </button>
               </div>
@@ -382,31 +381,29 @@
         </div>
       </div>
       <div class="row tab" id="tab-finished">
-          <div class="col padding-20 border-line">
-            <div id="upload-box">
-              <div>
-                <h2>Upload Succesfull</h2>
-                <p class="desc">
-                  Your artwork has been uploaded succesfully
-                </p>
-              </div>
+        <div class="col padding-20 border-line">
+          <div id="upload-box">
+            <div>
+              <h2>Upload Succesfull</h2>
+              <p class="desc">
+                Your artwork has been uploaded succesfully
+              </p>
             </div>
-            
-  
-            <div id="upload-box" class="margin-20"></div>
-  
-            <div class="row">
+          </div>
 
-              <div class="col justify-content-end flex">
-                <div class="formnavbtn">
-                  <a href="./artist.html" class="yellowbutton ">
-                    Finish
-                  </a>
-                </div>
+          <div id="upload-box" class="margin-20"></div>
+
+          <div class="row">
+            <div class="col justify-content-end flex">
+              <div class="formnavbtn">
+                <a href="./artist.html" class="yellowbutton ">
+                  Finish
+                </a>
               </div>
             </div>
           </div>
         </div>
+      </div>
     </section>
     <footer class="container">
       <hr class="divider" />
