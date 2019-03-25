@@ -124,10 +124,10 @@ function adjustprice(val) {
 }
 function getTimer() {
   timeArr = [
-    { id: "bid-01", date: "March 20, 2019 15:37:25" },
-    { id: "bid-02", date: "March 21, 2019 03:45:23" },
-    { id: "bid-03", date: "March 21, 2019 17:37:25" },
-    { id: "bid-04", date: "March 22, 2019 19:45:23" }
+    { id: "bid-01", date: "March 28, 2019 15:37:25" },
+    { id: "bid-02", date: "March 28, 2019 03:45:23" },
+    { id: "bid-03", date: "March 28, 2019 17:37:25" },
+    { id: "bid-04", date: "March 28, 2019 19:45:23" }
   ];
   timeArr.forEach(element => {
     getCountDown(element);

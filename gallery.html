@@ -8,9 +8,10 @@
 
     <link rel="stylesheet" href="./css/bootstrap-grid.css" />
 
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
 
-    <script src="js/script.js"></script>
   </head>
   <body>
     <section id="topNav">
@@ -67,173 +68,209 @@
       </div>
       <hr class="divider" />
     </section>
-    <!-- <section class="container">
-      <div class="bd-example">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/popart1.jpg" class="d-block w-100" alt="..." />
-              <div class="overlay"></div>
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-                <button class="yellowbutton dont-expand">Follow</button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/popart1.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/popart1.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </section> -->
+
     <section class="container">
-      <div class="bd-example">
-        <div
-          id="carouselExampleCaptions"
-          class="carousel slide"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#carouselExampleCaptions"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./img/popart1.jpg" class="d-block w-100" alt="..." />
-              <div class="row">
-                <div class="col ">
-                  <a href="artwork-detail.html">
-                    <div class="norm-card">
-                      <img class="cardCover" src="./img/popart3.jpg" alt="" />
-                      <div class="card-content">
-                        <h4>N120,000</h4>
-                        <p>Louis Nevelson</p>
-                        <p>Waters, 1958</p>
-                        <p>Gallery Art</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col ">
-                  <a href="artwork-detail.html">
-                    <div class="norm-card">
-                      <img class="cardCover" src="./img/popart3.jpg" alt="" />
-                      <div class="card-content">
-                        <h4>N120,000</h4>
-                        <p>Louis Nevelson</p>
-                        <p>Waters, 1958</p>
-                        <p>Gallery Art</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <div class="col ">
-                  <a href="artwork-detail.html">
-                    <div class="norm-card">
-                      <img class="cardCover" src="./img/popart3.jpg" alt="" />
-                      <div class="card-content">
-                        <h4>N120,000</h4>
-                        <p>Louis Nevelson</p>
-                        <p>Waters, 1958</p>
-                        <p>Gallery Art</p>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="carousel-caption d-none d-md-block"></div>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/popart1.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./img/popart1.jpg" class="d-block w-100" alt="..." />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </div>
+
+      <!-- GALLERY HEADER SHOULD GO HERE -->
+
+      <section id="slider" class="slider">
+        <div id="wrapper" class="slides-wrapper">
+          <div id="slide" class="slide" data-slide-id="0">
+            <img class="slide__img" src="img/sliderTest/featured-4.jpg" alt="slider-0">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 1</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
             </div>
           </div>
-          <a
-            class="carousel-control-prev"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#carouselExampleCaptions"
-            role="button"
-            data-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+          <div id="slide" class="slide" data-slide-id="1">
+            <img class="slide__img" src="img/sliderTest/featured-5.jpg" alt="slider-0">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 1</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="2">
+            <img class="slide__img" src="img/sliderTest/featured-6.jpg" alt="slider-0">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 1</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="3">
+            <img class="slide__img" src="img/sliderTest/featured-7.jpg" alt="slider-0">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 1</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="4">
+            <img class="slide__img" src="img/sliderTest/featured-8.jpg" alt="slider-0">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 1</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="5">
+            <img class="slide__img" src="img/sliderTest/featured-9.jpg" alt="slider-0">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 1</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="6">
+            <img class="slide__img" src="img/sliderTest/featured-3.jpg" alt="slider-1">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 2</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="7">
+            <img class="slide__img" src="img/sliderTest/featured-1.jpg" alt="slider-2">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 3</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="8">
+            <img class="slide__img" src="img/sliderTest/featured-2.jpg" alt="slider-3">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 4</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="9">
+            <img class="slide__img" src="img/sliderTest/featured.jpg" alt="slider-3">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 4</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="10">
+            <img class="slide__img" src="img/sliderTest/larger-1.jpg" alt="slider-3">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 4</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+          <div id="slide" class="slide" data-slide-id="11">
+            <img class="slide__img" src="img/sliderTest/larger.jpg" alt="slider-3">
+            <div class="slide__caption">
+              <span class="slide__caption--title">Slide 4</span>
+              <span class="slide__caption--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam assumenda nostrum quisquam voluptatem consectetur dolore, necessitatibus doloribus temporibus, enim animi adipisci architecto ipsum, labore corporis! Quaerat doloribus consequatur ex blanditiis?</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="slider__btn slider__btn--prev" data-slide="prev">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="slider__btn slider__btn--next" data-slide="next">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </a>
+
+        <div class="indicators">
+          <ul class="indicators__list">
+            <li class="indicators__item active" data-slide-to="0"></li>
+            <li class="indicators__item" data-slide-to="1"></li>
+            <li class="indicators__item" data-slide-to="2"></li>
+            <li class="indicators__item" data-slide-to="3"></li>
+            <li class="indicators__item" data-slide-to="4"></li>
+            <li class="indicators__item" data-slide-to="5"></li>
+            <li class="indicators__item" data-slide-to="6"></li>
+            <li class="indicators__item" data-slide-to="7"></li>
+            <li class="indicators__item" data-slide-to="8"></li>
+            <li class="indicators__item" data-slide-to="9"></li>
+            <li class="indicators__item" data-slide-to="10"></li>
+            <li class="indicators__item" data-slide-to="11"></li>
+          </ul>
+        </div>
+      </section>
+    </section>
+
+    <section class="container">
+
+      <!-- 3 COLUMN GALLERY SLIDER -->
+      <div class="my-slider">
+        <div>
+          <img src="img/sliderTest/download.jfif" alt="">
+        </div>
+        <div>
+          <img src="img/sliderTest/download-1.jfif" alt="">
+        </div>
+        <div>
+          <img src="img/sliderTest/download-2.jfif" alt="">
+        </div>
+        <div>
+          <img src="img/sliderTest/download-3.jfif" alt="">
         </div>
       </div>
     </section>
+    
+    <footer class="container">
+      <hr class="divider" />
+      <div class="row">
+        <div class="col">
+          <ul>
+            <li><h4>For Buyers</h4></li>
+            <li><a href="#">Art Advisory Services</a></li>
+            <li><a href="#">Buyers FAQ</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Art Prints</a></li>
+            <li><a href="#">Curators Circle</a></li>
+            <li><a href="#">Catalogue</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>For Artist</h4></li>
+            <li><a href="#">Why Sell</a></li>
+            <li><a href="#">Artist Handbook</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>About Us</h4></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>Snow Africa</h4></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Copyright Policy</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <ul>
+            <li><h4>Top Categories</h4></li>
+            <li><a href="#">Paintings</a></li>
+            <li><a href="#">Photography</a></li>
+            <li><a href="#">Sculpture</a></li>
+            <li><a href="#">Drawings</a></li>
+            <li><a href="#">Collage</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row" id="logobottom">
+        <div class="col"><img src="./img/logo_bottom.jpg" alt="" /></div>
+      </div>
+    </footer>
+    <script src="dist/script.min.js"></script>
+    <script src="dist/tiny-slider.min.js"></script>
+    <script>
+
+      var slider = tns({
+        "container": '.my-slider',
+        "items": 3,
+        "gutter": 10,
+        "swipeAngle": false,
+        "speed": 400
+      });
+    </script>
   </body>
 </html>
